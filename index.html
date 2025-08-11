@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة مع روابط</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1ede5; /* خلفية نفس لون الصورة */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .content {
+            margin-top: 20px;
+        }
+
+        .main-image {
+            width: 60%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 0 auto 30px auto;
+        }
+
+        .logos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logos img {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            background-color: #fff; /* خلفية بيضاء للوجو */
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .logos img:hover {
+            transform: scale(1.15);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <img src="native.jpg" alt="Native" class="main-image">
+
+        <div class="logos">
+            <a href="https://www.instagram.com/native__41" target="_blank">
+                <img src="instgram.png.png" alt="Instagram">
+            </a>
+
+            <a href="https://maps.app.goo.gl/T4npFxmJW5xWNcne6" target="_blank">
+                <img src="map.png.png" alt="Google Maps">
+            </a>
+
+            <a href="https://www.tiktok.com/@native_411" target="_blank">
+                <img src="tiktok.Png.png" alt="TikTok">
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
